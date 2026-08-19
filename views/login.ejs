@@ -1,13 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
-    <link href="css/main.css" rel="stylesheet">
-</head>
 <body>
-    <h1> make login page here</h1>
+
+    <!-- Website Logo -->
+    <header class="site-header">
+        <img src="images/logo.png" alt="EduCareer Advisor Logo">
+        <span>EduCareer Advisor</span>
+    </header>
+
+
+    <!-- Background Logo -->
+    <div class="background-logo">
+        <img src="images/logo.png" alt="logo">
+    </div>
+
+
+    <!-- Main Login Area -->
+    <main class="login-container">
+
+        <section class="login-box">
+
+            <!-- Login Logo -->
+            <div class="login-logo">
+                <img src="images/logo.png" alt="EduCareer Advisor">
+            </div>
+
+
+            <!-- Login Heading -->
+            <div class="login-header">
+                <h1>Your Future, Our Guidance.</h1>
+
+                <p>
+                    Login to get personalized career &amp; education advice.
+                </p>
+            </div>
+
+
+            <!-- Login Form -->
+            <form action="/login" method="POST">
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+                </div>
+
+
+                <!-- Login Options -->
+                <div class="login-options">
+
+                    <label class="remember-me">
+                        <input
+                            type="checkbox"
+                            name="remember"
+                        >
+                        Remember me
+                    </label>
+
+                    <a href="/forgot-password">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <!-- Login Button -->
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+
+            <!-- Signup -->
+            <div class="signup-link">
+                <p>
+                    Don't have an account?
+                    <a href="/signup">Create Account</a>
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
     <script src="javascript/script.js"></script>
+
 </body>
 </html>
